@@ -1,0 +1,20 @@
+{
+  "author": "Ruben Shalimov",
+  "bugs": {
+    "url": "https://github.com/RobinBobin/react-native-application-session/issues"
+  },
+  "description": "React Native AppState wrapper.",
+  "homepage": "https://github.com/RobinBobin/react-native-application-session#readme",
+  "keywords": [
+    "React Native",
+    "AppState"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "name": "@robinbobin/react-native-application-session",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/RobinBobin/react-native-application-session.git"
+  },
+  "version": "0.1.0"
+}
