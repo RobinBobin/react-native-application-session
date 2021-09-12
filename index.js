@@ -15,8 +15,17 @@ export default class ApplicationSession {
     this._context = context;
     this._manage = this._manage.bind(this);
     
+    this.__canSwitchToActiveFromInit = true;
     this.__enableLogging = false;
     this.__switchCompleted = true;
+  }
+  
+  get canSwitchToActiveFromInit() {
+    return this.__canSwitchToActiveFromInit;
+  }
+  
+  set canSwitchToActiveFromInit(canSwitchToActiveFromInit) {
+    this.__canSwitchToActiveFromInit = canSwitchToActiveFromInit;
   }
   
   get currentState() {
@@ -38,7 +47,7 @@ export default class ApplicationSession {
       console.log(`ApplicationSession.init(): ${this.currentState}.`);
     }
     
-    if (this.currentState === "active") {
+    if (this.canSwitchToActiveFromInit && this.currentState === "active") {
       this._switchToActive();
     }
   }
@@ -57,7 +66,7 @@ export default class ApplicationSession {
   
   _manage(nextState) {
     if (this.enableLogging) {
-      console.log(`App state: ${nextState} ${AppState.currentState}.`);
+      console.log(`App state: ${nextState}.`);
     }
     
     const handlerName = ApplicationSession.__handlerNames[nextState];

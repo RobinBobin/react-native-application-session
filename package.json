@@ -12,9 +12,12 @@
   "license": "MIT",
   "main": "index.js",
   "name": "@robinbobin/react-native-application-session",
+  "peerDependencies": {
+    "react-native": "^0.64.0"
+  },
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/RobinBobin/react-native-application-session.git"
   },
-  "version": "0.1.0"
+  "version": "1.0.0"
 }
