@@ -4,20 +4,33 @@
     "url": "https://github.com/RobinBobin/react-native-application-session/issues"
   },
   "description": "React Native AppState wrapper.",
+  "devDependencies": {
+    "@robinbobin/ts-eslint-prettier": "^2.0.0",
+    "eslint": "^9.15.0",
+    "prettier": "^3.4.1",
+    "react-native": "^0.71.0",
+    "typescript": "^5.7.2"
+  },
+  "files": [
+    "js",
+    "package.json",
+    "src"
+  ],
   "homepage": "https://github.com/RobinBobin/react-native-application-session#readme",
   "keywords": [
     "React Native",
     "AppState"
   ],
   "license": "MIT",
-  "main": "index.js",
+  "main": "js/src/ApplicationSession.js",
   "name": "@robinbobin/react-native-application-session",
+  "packageManager": "pnpm@9.14.2+sha512.6e2baf77d06b9362294152c851c4f278ede37ab1eba3a55fda317a4a17b209f4dbb973fb250a77abc463a341fcb1f17f17cfa24091c4eb319cda0d9b84278387",
   "peerDependencies": {
-    "react-native": "^0.64.0"
+    "react-native": "^0.71.0"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@github.com/RobinBobin/react-native-application-session.git"
+  "repository": "github:RobinBobin/react-native-application-session.git",
+  "scripts": {
+    "prepack": "./prepack.sh"
   },
-  "version": "1.0.0"
+  "version": "2.0.0"
 }
